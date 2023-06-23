@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  chatgpt-next-web-spanish:
+    build:
+      context: .
+    environment:
+      OPENAI_API_KEY: ""
+      CODE: ""
+    ports:
+    - 3001:3000
+    restart: always
